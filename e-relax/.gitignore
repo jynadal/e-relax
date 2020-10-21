@@ -5,6 +5,20 @@
 /.pnp
 .pnp.js
 
+# HTML à ignoré
+/beautyhouse
+/src/404.html
+/src/about-us.html
+/src/blog-details.html
+/src/blog.html
+/src/contact-us.html
+/src/index-box-fixed.html
+
+
+/src/js
+
+
+
 # testing
 /coverage
 
