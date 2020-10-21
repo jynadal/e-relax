@@ -1,20 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import './navigation.modules.css';
+
+import {Avatar} from 'antd';
+import './_navigation.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import {
-    faPinterest,
-    faFacebook,
-    faTwitter,
-    faInstagram, faDribbble
-  } from "@fortawesome/free-brands-svg-icons";
+import {faPinterest, faFacebook, faTwitter, faInstagram, faDribbble } from "@fortawesome/free-brands-svg-icons";
 
-import {SocialMediaIconsReact} from 'social-media-icons-react';
 
-import { Facebook, Twitter, Dribbble, Pinterest, Instagram } from 'react-feather';
-
-const Navigation = () => {
+const Navigation = ({user}) => {
 
     const navLinks = [
         {
@@ -87,6 +81,11 @@ const Navigation = () => {
                             </div>
                         </div>
 
+                        <span className="menu-avatar-container">
+                        <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={38} /> 
+                        <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
+                        </span>
+
                     </div>
                 </div>
             </div>
@@ -104,7 +103,7 @@ const Navigation = () => {
 
                             </div>
 
-                            <div className="col-md-8 hidden-sm hidden-xs">
+                            {/* <div className="col-md-8 hidden-sm hidden-xs"> */}
 
                                 <div className="menu-content-container">
                                     <nav>
@@ -118,7 +117,7 @@ const Navigation = () => {
                                     </nav>
                                 </div>
 
-                            </div>
+                            {/* </div> */}
 
                             <div className="col-md-2 col-sm-6 col-xs-3">
                                 <div className="header-action-box">
