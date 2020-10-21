@@ -1,6 +1,8 @@
 import React from 'react';
+import Navigation from './components/Navigation';
 
-import './App.css';
+import './css/default.css';
+import './css/responsive.css';
 
 function App() {
   return (

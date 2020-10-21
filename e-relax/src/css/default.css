@@ -36,7 +36,7 @@ body {
 }
 a,button{
 	font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-weight: 600;    
 }
 a,
 .btn {
@@ -67,7 +67,7 @@ a,
 button,
 input {
     outline: medium none;
-    color: #6bc513;
+    color: #535353;
 }
 .uppercase { 
     text-transform: uppercase
@@ -176,7 +176,7 @@ label {
 }
 
 /***************************
-    transtion
+    transition
 ****************************/
 a.button::after,
 a.button-small::after {

@@ -1,0 +1,30 @@
+.header-top .row, .header-bottom .row {
+    height: 65px;
+    width: 100%;
+    background: red;
+    display:flex;
+    justify-content: space-between;
+}
+.mail-address, .call-center, .header-left, .social-icons  {
+    display:flex;
+    justify-content: space-around;
+    margin-left: 20px;
+
+}
+  .social-icons .zmdi {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px auto ;
+
+ } 
+
+
+.header-bottom .row {
+    justify-content: space-around;
+
+}
+
+nav ul li{
+    color:black;
+}
