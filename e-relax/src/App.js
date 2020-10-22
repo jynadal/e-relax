@@ -18,15 +18,21 @@ function App() {
   
   return (
     <Router>
-    <div className="App">
-      <Navigation user={user}/> 
-      <Switch>
-        <Route path="/:page" component={PageRenderer} />
-        <Route path="/" render={() => <Redirect to="/Home" />} />
-        <Route component={() => 404} />
-      </Switch> 
-      <Footer />   
-    </div>
+      <body className="pattern-fixed pattern">
+        <div className="boxed-layout fixed">
+          <div className="wrapper white-bg">
+            <div className="App">
+              <Navigation user={user}/> 
+              <Switch>
+                <Route path="/:page" component={PageRenderer} />
+                <Route path="/" render={() => <Redirect to="/Home" />} />
+                <Route component={() => 404} />
+              </Switch> 
+              <Footer />   
+            </div>
+          </div>
+        </div>
+      </body>
     </Router>
   );
 }

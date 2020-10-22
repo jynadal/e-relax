@@ -4,7 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'antd/dist/antd.css';
-import '@quasar/extras/ionicons-v4/ionicons-v4.css'
+import '@quasar/extras/ionicons-v4/ionicons-v4.css';
+
+import './assets/css/bootstrap.min.css';
+//import './assets/css/core.css';
+import './assets/css/style.css';
+import './assets/css/responsive.css';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
