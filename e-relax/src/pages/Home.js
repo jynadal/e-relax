@@ -1,13 +1,17 @@
-import React from 'react'
+import React from 'react';
+import aboutImg from '../images/about/about1.jpg';
+import slider1 from '../assets/images/slider/1.jpg';
+import Slider from './Slider'
 
 export default function Home ()  {
     return (
         <div>
+            <Slider />
                         {/* <!--slider section start-->  */}
             <div className="slider-container">
                 {/* <!-- Slider Image -->  */}
                 <div id="mainSlider" className="nivoSlider slider-image">
-                    <img src="../images/slider/1.jpg" alt="" title="#htmlcaption1"/>
+                    <img src={slider1} alt="" title="#htmlcaption1"/>
                     <img src="images/slider/2.jpg" alt="" title="#htmlcaption2"/>
                     <img src="images/slider/3.jpg" alt="" title="#htmlcaption3"/>
                 </div>
@@ -99,8 +103,7 @@ export default function Home ()  {
                     <div className="row">
                         <div className="col-md-6 col-sm-12 col-xs-12">
                             <div className="about-img">
-                                <img src="about1.jpg" alt="" />
-                                {/* ../images/about/ */}
+                                <img src={aboutImg} alt="" />
                             </div>
                         </div>
                         <div className="col-md-6 col-sm-12 col-xs-12">

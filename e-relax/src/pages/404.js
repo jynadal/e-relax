@@ -1,4 +1,5 @@
 import React from 'react'
+import Img404 from '../images/404Poilu.jpg'
 
 const QuatresCentsQuiatres = () => {
     return (
@@ -28,13 +29,14 @@ const QuatresCentsQuiatres = () => {
                     <div class="row">
                         <div class="col-md-12">
                             <div class="error-content ">
-                                {/* <img url("../images/404Poilu.jpg") alt=""/> */}
+                                <img src={Img404} alt=""/>
                                 <h2>404</h2>
-                                <h3>Page not found!</h3>
-                                <h4>Oops! Looks like something going rong</h4>
-                                <p>We can’t seem to find the page you’re looking for <br/>
-                                    make sure that you have typed the currect URL</p>
-                                <a class="go-home" href="Home">Go to home</a>
+                                <h3>Page non trouver!</h3>
+                                <h4>Oops! il y a un petit souci.</h4>
+                                <p>Je vais chercher des recharges de cire <br/>
+                                    et on se rejoint à l'ACCUEIL</p>
+                                <a class="go-home" href="Home">Allez à l'Accueil</a>
+                                
                             </div>
                         </div>
                     </div>
