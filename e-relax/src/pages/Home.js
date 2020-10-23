@@ -7,7 +7,7 @@ export default function Home ()  {
             <div className="slider-container">
                 {/* <!-- Slider Image -->  */}
                 <div id="mainSlider" className="nivoSlider slider-image">
-                    <img src="images/slider/1.jpg" alt="" title="#htmlcaption1"/>
+                    <img src="../images/slider/1.jpg" alt="" title="#htmlcaption1"/>
                     <img src="images/slider/2.jpg" alt="" title="#htmlcaption2"/>
                     <img src="images/slider/3.jpg" alt="" title="#htmlcaption3"/>
                 </div>
@@ -37,6 +37,7 @@ export default function Home ()  {
                         </div>
                     </div>
                 </div>
+
                 <div id="htmlcaption2" className="nivo-html-caption slider-caption-1">
                     <div className="slider-text-table">
                         <div className="slider-text-tablecell">
@@ -62,6 +63,7 @@ export default function Home ()  {
                         </div>
                     </div>
                 </div>
+
                 <div id="htmlcaption3" className="nivo-html-caption slider-caption-1">
                     <div className="slider-text-table">
                         <div className="slider-text-tablecell">
@@ -87,24 +89,31 @@ export default function Home ()  {
                         </div>
                     </div>
                 </div>
+
             </div>
             {/* <!--slider section end-->  */}
+
             {/* <!--welcome section start-->  */}
             <div className="welcome-about">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 col-sm-12 col-xs-12">
                             <div className="about-img">
-                                <img src="images/about/1.jpg" alt="" />
+                                <img src="about1.jpg" alt="" />
+                                {/* ../images/about/ */}
                             </div>
                         </div>
                         <div className="col-md-6 col-sm-12 col-xs-12">
                             <div className="about-desc">
-                                <h6>Welcome to beauty house</h6>
-                                <h2>About Our Beauty House</h2>
-                                <p className="text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet dolor libero, eget loved venenatis mauris finibus dictum. Vestibulum quis elit eget neque porttitor  no amet dolor. Proin pretium purus a lorem ornare</p>
-                                <p className="text-2">sed lobortis pulvinar. Integer laoreet mi id eros porta euismod. Suspendisse potenti. Nulla eros mauris, convallis et sem tempus, viverra hendrerit sapien  Lorem  amet, consectetur adipiscing elit. Donec aliquet dolor libero, </p>
-                                <a href="#">Read more</a>
+                                
+                                <h2>Votre esthéticienne</h2>
+                                <p className="text-1">Marjorie, esthéticienne diplômée et expérimentée met son savoir-faire et son expérience au service de votre bien-être.</p>
+
+                                <h6>Simplifiez-vous la vie !</h6>
+                                <p className="text-2">
+                                    En faisant appel à moi, c’est l’institut qui vient à vous. Nul besoin de faire garder vos enfants et fini le stress des embouteillages.
+                                    Je me déplace à votre domicile, équipée de tout le matériel professionnel nécessaire, et vous propose une large gamme de soins esthétiques :</p>
+                                <a href="#">Savoir plus</a>
                             </div>
                         </div>
                     </div>

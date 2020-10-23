@@ -1,6 +1,35 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Footer()  {
+    const footerLinks = [
+        {
+            title:'Accueil',
+            path:'/'
+        },
+        {
+            title:'A Propos',
+            path:'/About-us'
+        },
+        {
+            title:'Nos Prestations',
+            path:'/Prestations'
+        },
+        {
+            title:'Offre Spéciales',
+            path:'/Specials'
+        },
+        {
+            title:'Idées Cadeaux',
+            path:'/Gifts'
+        },{
+            title:'Blog',
+            path:'/Blog'
+        },{
+            title:'Contact',
+            path:'/Contact-us'
+        }
+    ]
     return (
         <div class="footer">
             <div class="footer-top ptb-100">
@@ -33,11 +62,9 @@ export default function Footer()  {
                                     <h3>Quick links</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">about</a></li>
-                                    <li><a href="#">serivces</a></li>
-                                    <li><a href="#">portfolio</a></li>
-                                    <li><a href="#">contact us</a></li>
+                                    {footerLinks.map((link, index) =>(
+                                        <li key={index}><Link to={link.path}>{link.title}</Link></li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>
@@ -79,8 +106,8 @@ export default function Footer()  {
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="copyright">
                                 <p>
-                                    Copyright© Beautyhouse 2016.All right reserved.Created by
-                                    <a target="_blank" href="http://bootexperts.com">HasTech</a>
+                                    Copyright© 2020.All right reserved.
+                                    <a target="_blank" href="https://monwebdev.fr">MonWebDev</a>
                                 </p>
                             </div>
                         </div>

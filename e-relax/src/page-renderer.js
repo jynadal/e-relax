@@ -1,5 +1,6 @@
 import React from 'react';
 import {useRouteMatch} from 'react-router-dom';
+import QuatresCentsQuatres from './pages/404'
 
 const generatePage = page => {
     const component = () => require(`./pages/${page}`).default
@@ -8,7 +9,8 @@ const generatePage = page => {
         return React.createElement(component())        
     } catch (err) {
         console.warn(err)
-        return React.createElement(() => 404)        
+        return React.createElement(() =>
+        <QuatresCentsQuatres />)        
     }
 } 
 
