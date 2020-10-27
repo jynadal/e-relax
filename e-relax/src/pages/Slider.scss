@@ -9,12 +9,15 @@
     position: relative;
     overflow: hidden;
     background: white;
+    i{
+        font-size: 2vw;
+    }
 
 }
 
 .slide {
     min-width: 100%;
-    height: 80vh;
+    height: 100vh;
     transition: 0.5s;
     overflow: hidden;
 }
@@ -28,6 +31,16 @@
     background: none;
     border: none;
     outline: none;
+    transform: 0.5s;
+
+    &:hover{
+        background: rgba(0, 0, 0, 0.356);
+        height: 100%;
+        cursor: pointer;
+        i{
+            color: whitesmoke;
+        }
+    }
 
 }
 

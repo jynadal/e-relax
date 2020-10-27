@@ -36,8 +36,8 @@ const goRight=() => {
                         </div>
                 )
             })}
-            <button id="goLeft"  onClick={goLeft}>left</button>
-            <button id="goRight" onClick={goRight}>right</button>
+            <button id="goLeft"  onClick={goLeft}><i class="fas fa-chevron-left"></i></button>
+            <button id="goRight" onClick={goRight}><i class="fas fa-chevron-right"></i></button>
         </div>
     );
 }
