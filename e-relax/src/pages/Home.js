@@ -1,8 +1,10 @@
 import React from 'react'
+import Slider from './Slider'
 
 export default function Home ()  {
     return (
         <div>
+            <Slider />
                         {/* <!--slider section start-->  */}
             <div className="slider-container">
                 {/* <!-- Slider Image -->  */}
@@ -38,7 +40,7 @@ export default function Home ()  {
                     </div>
                 </div>
 
-                <div id="htmlcaption2" className="nivo-html-caption slider-caption-1">
+                {/* <div id="htmlcaption2" className="nivo-html-caption slider-caption-1">
                     <div className="slider-text-table">
                         <div className="slider-text-tablecell">
                             <div className="container-fluid">
@@ -89,6 +91,9 @@ export default function Home ()  {
                         </div>
                     </div>
                 </div>
+
+               */}
+
 
             </div>
             {/* <!--slider section end-->  */}
