@@ -5,7 +5,7 @@ import  imgAbout from '../assets/images/about/about1.jpg'
 export default function Home ()  {
     return (
         <div>
-            <Slider />
+            <Slider  />
                         {/* <!--slider section start-->  */}
             <div className="slider-container">
                 {/* <!-- Slider Image -->  */}
@@ -102,7 +102,7 @@ export default function Home ()  {
                 </div>
             </div>
             {/* <!--welcome section end-->  */}
-            
+
             {/* <!--fun fact area-->  */}
             <div className="fun-fact text-center ptb-100">
                 <div className="container">
@@ -166,12 +166,12 @@ export default function Home ()  {
                             <div className="col-md-12">
                                 <div className="gallery-tab-menu text-center">   
                                     <ul role="tablist">
-                                        <li role="presentation"><a href="#all" aria-controls="all" data-toggle="tab">All</a></li>
-                                        <li role="presentation"><a aria-controls="massage" href="#massage" data-toggle="tab">Lunch</a></li>
-                                        <li role="presentation"><a href="#skin" aria-controls="skin" data-toggle="tab">skin care</a></li>
-                                        <li role="presentation"  className="active"><a href="#hair" aria-controls="hair" data-toggle="tab">hair cut</a></li>
-                                        <li role="presentation"><a href="#nail" aria-controls="nail" data-toggle="tab">nail care  </a></li>
-                                        <li role="presentation"><a href="#beauty" aria-controls="beauty" data-toggle="tab"> beauty spa</a></li>
+                                        <li role="presentation"><a href="#all" aria-controls="all" data-toggle="tab">Tous</a></li>
+                                        <li role="presentation"><a aria-controls="massage" href="#massage" data-toggle="tab">Epilations</a></li>
+                                        <li role="presentation"><a href="#skin" aria-controls="skin" data-toggle="tab">Soins Visage</a></li>
+                                        <li role="presentation"  className="active"><a href="#hair" aria-controls="hair" data-toggle="tab">Soin Corps</a></li>
+                                        <li role="presentation"><a href="#nail" aria-controls="nail" data-toggle="tab">Modelage Corps</a></li>
+                                        <li role="presentation"><a href="#beauty" aria-controls="beauty" data-toggle="tab"> Beauté mains&pieds</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -610,6 +610,7 @@ export default function Home ()  {
                 </div>
             </div>
             {/* <!--Video section end-->  */}
+
             {/* <!--pricing palaning start-->  */}
             <div className="pricing-plan ptb-100">
                 <div className="container">
@@ -621,6 +622,8 @@ export default function Home ()  {
                             </div>
                         </div>
                     </div>
+
+
                     <div className="row">
                         <div className="col-md-4 col-sm-6 col-xs-12">
                             <div className="pricing-table text-center">
@@ -690,7 +693,14 @@ export default function Home ()  {
                         <div className="row">
                             <div className="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                                 <div className="testimonail-list owl_pagination">
+
+
                                     <div className="single-testimonial">
+                                        <p><i className="fa fa-quote-left" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
+                                        <h3>sathi bhuiyan</h3>
+                                        <p className="title">Manager</p>
+                                    </div>
+                                    {/* <div className="single-testimonial">
                                         <p><i className="fa fa-quote-left" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
                                         <h3>sathi bhuiyan</h3>
                                         <p className="title">Manager</p>
@@ -709,12 +719,9 @@ export default function Home ()  {
                                         <p><i className="fa fa-quote-left" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
                                         <h3>sathi bhuiyan</h3>
                                         <p className="title">Manager</p>
-                                    </div>
-                                    <div className="single-testimonial">
-                                        <p><i className="fa fa-quote-left" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
-                                        <h3>sathi bhuiyan</h3>
-                                        <p className="title">Manager</p>
-                                    </div>
+                                    </div> */}
+
+
                                 </div>
                             </div>
                         </div>

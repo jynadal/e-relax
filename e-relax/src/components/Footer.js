@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+
 export default function Footer()  {
     const footerLinks = [
         {
@@ -38,21 +39,21 @@ export default function Footer()  {
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="single-footer contact">
                                 <div class="footer-title">
-                                    <h3>Contact us</h3>
+                                    <h3>Me Contactez</h3>
                                 </div>
                                 <div class="contact-action mb-15">
-                                    <span><i class="zmdi zmdi-pin"></i></span>
-                                    <p>House No 08, Road No 08,<br/>Din Bari, Dhaka, Bangladesh</p>
+                                    <span><i class="fas fa-map-marker-alt" style={{color: "#6bc513"}}></i></span>
+                                    <p>Servon, Lesigny, Santeny, ...<br/> Brie-Compte-Robert</p>
                                 </div>
                                 <div class="contact-action mb-15">
-                                    <span><i class="zmdi zmdi-email"></i></span>
-                                    <p>Username@gmail.com<br/>Damo@gmail.com</p>
+                                    <span><i class="fas fa-envelope" style={{color: "#6bc513"}}></i></span>
+                                    <p>contact@escalerelax.com<br/></p>
                                 </div>
                                 <div class="contact-action">
                                     <span>
-                                        <i class="zmdi zmdi-phone"></i>
+                                    <i class="fas fa-mobile-alt" style={{color:"#6bc513"}}></i>
                                     </span>
-                                    <p>(+660 256 24857)<br/>(+660 256 24857)</p>
+                                    <p>Tel: 06 15 17 23 41</p>
                                 </div>
                             </div>
                         </div>
@@ -76,9 +77,7 @@ export default function Footer()  {
                                 <p>Lorem ipsum dolor sit amet, consectetueiusmodm dost  adipisicing elit, sed do eiusmod is tempincididuntm ut 
                                     lorem ipsome do or sit amt  labore et dolor </p>
                                 <ul>
-                                    <li>Monday - Friday <span>8.00-5.00</span></li>
-                                    <li>Saturday <span>12.00-5.00</span></li>
-                                    <li>Sunday <span class="close">close</span></li>
+                                    <li>Lundi au Samedi <span>9h à 20h</span></li>
                                 </ul>
                             </div>
                         </div>

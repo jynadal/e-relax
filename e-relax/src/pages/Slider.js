@@ -10,10 +10,11 @@ import I4 from './../assets/images/slider/pool_1920.jpg'
 function Slider() {
     
 let sliderArr = [
-    <ImgComp src={I1} />,
-    <ImgComp src={I2} />,
-    <ImgComp src={I3} />,
-    <ImgComp src={I4} />
+    <ImgComp src={I4} title={"Relax chez vous"} text1={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum"} text2={"massa.lorem ipsum dolor sit amet,consectetur adipicing elit."} />,
+    <ImgComp src={I2} title={"Titre 2"} text1={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum"} text2={"massa.lorem ipsum dolor sit amet,consectetur adipicing elit."} />,
+    <ImgComp src={I3} title={"Esthéticienne et produits de qualité"} text1={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum"} text2={"massa.lorem ipsum dolor sit amet,consectetur adipicing elit."} />,
+    <ImgComp src={I1} title={"soins beauté entre amis!"} text1={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum"} text2={"massa.lorem ipsum dolor sit amet,consectetur adipicing elit."} />,
+    
     // {title:'', url:'', text:''}
 ]
 const [x, setX]= useState(0);

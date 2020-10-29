@@ -85,7 +85,7 @@ img{max-width: 100%}
   margin: 70px 0;
 }
 .pattern-fixed.pattern {
-  background: url("../images/bg/pattern.png") repeat fixed 0 0;
+  background: url("../../assets/images/bg/pattern.png") repeat fixed 0 0;
 }
 .boxed-layout.fixed {
   margin: 50px 0;
@@ -306,7 +306,7 @@ img{max-width: 100%}
   z-index: 999;
 }
 /*-------------------
-    03. slider css here
+    03. slider css ICI
 -----------------------*/
 .slider-container .nivo-controlNav {
   bottom: 115px;
@@ -323,6 +323,10 @@ img{max-width: 100%}
     display: table;
     height: 100%;
     width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .slider-text-tablecell {
     display: table-cell;
@@ -330,8 +334,13 @@ img{max-width: 100%}
     vertical-align: middle;
 }
 .slide1-text {
-  margin-top: -60px;
-  
+  /* margin-top: -60px; */
+  /* position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+
+
 }
 .title-1 h1 {
     color: #535353;
@@ -357,7 +366,7 @@ img{max-width: 100%}
   border: 2px solid #6bc513;
   color: #6bc513
 }
-.nivo-controlNav a {
+/* .nivo-controlNav a {
   background-color: rgba(92, 197, 57, 0.6);
   border: 2px solid transparent;
   border-radius: 100%;
@@ -379,7 +388,9 @@ img{max-width: 100%}
 .nivo-controlNav a.active {
   width: 16px;
   height: 16px;
-}
+} */
+
+
 /*-------------------
     04. Welcome about css here
 --------------------*/
@@ -421,7 +432,7 @@ img{max-width: 100%}
     05. fun fact css here
 --------------------*/
 .fun-fact {
-    background: url(../images/bg/1.jpg)no-repeat scroll center center;
+    background: url(../../assets/images/bg/1.jpg)no-repeat scroll center center;
     background-size: cover;
 }
 .fun-icon a {
@@ -842,7 +853,7 @@ img{max-width: 100%}
     width: 100%;
 }
 .pricing-table:before {
-  background: rgba(0, 0, 0, 0) url("../../images/common/pricing-1.png") no-repeat scroll right bottom;
+  background: rgba(0, 0, 0, 0) url("../../assets/images/common/tiare.png") no-repeat scroll right bottom;
   bottom: 0;
   content: "";
   height: 100%;
@@ -854,7 +865,7 @@ img{max-width: 100%}
   z-index: -9;
 }
 .pricing-table:hover {
-  background: rgba(0, 0, 0, 0) url("../../images/common/pricing-2.png") no-repeat scroll -150px 0;
+  background: rgba(0, 0, 0, 0) url("../../assets/images/common/serviette.png") no-repeat scroll -150px 0;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
@@ -874,11 +885,11 @@ img{max-width: 100%}
     11. Testimonial css here
 ------------------------*/
 .testimonial {
-  background: #f1f1f1 url(../../images/common/test-bg-1.png)no-repeat scroll left bottom;
+  background: #f1f1f1 url(../../assets/images/common/test-bg1.png)no-repeat scroll left bottom;
 }                   
 .testimonial .bg-img {
   padding: 100px 0;
-  background: url(../../images/common/test-bg-2.png)no-repeat scroll right center;
+  background: url(../../assets/images/common/test-bg2.png)no-repeat scroll right center;
 }
 .single-testimonial p {
     font-style: italic;
@@ -1011,13 +1022,13 @@ img{max-width: 100%}
   width: 33.33%;
 }
 .footer-top {
-    background: #f1f1f1 url(../../images/common/f-bg-1.png)no-repeat scroll left center;
+    background: #f1f1f1 url(../../assets/images/common/f-bg1.png)no-repeat scroll left center;
 }
 .footer {
    position: relative;
 }
 .footer:before {
-    background: url(../../images/common/f-bg-2.png)no-repeat scroll right bottom;
+    background: url(../../assets/images/common/footer-bg2.png)no-repeat scroll right bottom;
     width: 100%;
     height: 100%;
     content: "";
