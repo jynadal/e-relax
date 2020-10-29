@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from './Slider'
+import  imgAbout from '../assets/images/about/about1.jpg'
 
 export default function Home ()  {
     return (
@@ -14,31 +15,7 @@ export default function Home ()  {
                     <img src="images/slider/3.jpg" alt="" title="#htmlcaption3"/>
                 </div>
                 {/* <!-- Slider Caption 1 -->  */}
-                <div id="htmlcaption1" className="nivo-html-caption slider-caption-1">
-                    <div className="slider-text-table">
-                        <div className="slider-text-tablecell">
-                            <div className="container-fluid">
-                                <div className="row">
-                                    <div className="col-md-12 col-sm-12 col-xs-12">
-                                        <div className="slide1-text">
-                                            <div className="middle-text">
-                                                <div className="title-1 wow rotateInDownRight" data-wow-duration="0.9s" data-wow-delay="0s">
-                                                    <h1>welcome our beauty house</h1>
-                                                </div>	
-                                                <div className="desc wow slideInRight" data-wow-duration="1.2s" data-wow-delay="0.2s">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum<br/> massa.lorem ipsum dolor sit amet,consectetur adipicing elit.</p>
-                                                </div>
-                                                <div className="explore-now wow bounceInUp" data-wow-duration="1.3s" data-wow-delay=".5s">
-                                                    <a href="#">Explore now</a>
-                                                </div>	
-                                            </div>	
-                                        </div>				
-                                    </div>
-                                </div>	
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
 
                 {/* <div id="htmlcaption2" className="nivo-html-caption slider-caption-1">
                     <div className="slider-text-table">
@@ -104,7 +81,7 @@ export default function Home ()  {
                     <div className="row">
                         <div className="col-md-6 col-sm-12 col-xs-12">
                             <div className="about-img">
-                                <img src="about1.jpg" alt="" />
+                                <img src={imgAbout} alt="" />
                                 {/* ../images/about/ */}
                             </div>
                         </div>
@@ -125,6 +102,7 @@ export default function Home ()  {
                 </div>
             </div>
             {/* <!--welcome section end-->  */}
+            
             {/* <!--fun fact area-->  */}
             <div className="fun-fact text-center ptb-100">
                 <div className="container">
@@ -169,6 +147,7 @@ export default function Home ()  {
                 </div>
             </div>
             {/* <!--fun fact area end-->  */}
+
             {/* <!--Gallery section start-->  */}
             <div className="galllery ptb-100">
                 <div className="container">

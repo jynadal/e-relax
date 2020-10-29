@@ -85,7 +85,7 @@ img{max-width: 100%}
   margin: 70px 0;
 }
 .pattern-fixed.pattern {
-  background: url("../../images/bg/pattern.png") repeat fixed 0 0;
+  background: url("../images/bg/pattern.png") repeat fixed 0 0;
 }
 .boxed-layout.fixed {
   margin: 50px 0;
@@ -331,6 +331,7 @@ img{max-width: 100%}
 }
 .slide1-text {
   margin-top: -60px;
+  
 }
 .title-1 h1 {
     color: #535353;
@@ -420,7 +421,7 @@ img{max-width: 100%}
     05. fun fact css here
 --------------------*/
 .fun-fact {
-    background: url(../../images/bg/1.jpg)no-repeat scroll center center;
+    background: url(../images/bg/1.jpg)no-repeat scroll center center;
     background-size: cover;
 }
 .fun-icon a {
@@ -640,7 +641,7 @@ img{max-width: 100%}
     07. Sepecial offer css here
 -----------*/
 .special-offer {
-  background: rgba(0, 0, 0, 0) url("../../images/common/offer-bg.jpg") no-repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 0) url("../images/common/offer-bg.jpg") no-repeat scroll center center / cover ;
   padding: 139px 0 176px;
   position: relative;
 }
