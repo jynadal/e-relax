@@ -1,5 +1,8 @@
-import React from 'react'
-import Slider from './Slider'
+import React from 'react';
+import Slider from './Slider';
+import Feature from './Feature';
+import Gallery from './Gallery';
+
 import  imgAbout from '../assets/images/about/about1.jpg'
 
 export default function Home ()  {
@@ -81,8 +84,7 @@ export default function Home ()  {
                     <div className="row">
                         <div className="col-md-6 col-sm-12 col-xs-12">
                             <div className="about-img">
-                                <img src={imgAbout} alt="" />
-                                {/* ../images/about/ */}
+                                <img src={imgAbout} alt="about" />
                             </div>
                         </div>
                         <div className="col-md-6 col-sm-12 col-xs-12">
@@ -104,7 +106,7 @@ export default function Home ()  {
             {/* <!--welcome section end-->  */}
 
             {/* <!--fun fact area-->  */}
-            <div className="fun-fact text-center ptb-100">
+            {/* <div className="fun-fact text-center ptb-100">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3 col-sm-3 col-xs-12">
@@ -145,383 +147,16 @@ export default function Home ()  {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* <!--fun fact area end-->  */}
 
             {/* <!--Gallery section start-->  */}
-            <div className="galllery ptb-100">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-8 col-md-offset-2">
-                            <div className="section-title text-center">
-                                <h2>our latest gallery</h2>
-                                <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="gallery-tab-section">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="gallery-tab-menu text-center">   
-                                    <ul role="tablist">
-                                        <li role="presentation"><a href="#all" aria-controls="all" data-toggle="tab">Tous</a></li>
-                                        <li role="presentation"><a aria-controls="massage" href="#massage" data-toggle="tab">Epilations</a></li>
-                                        <li role="presentation"><a href="#skin" aria-controls="skin" data-toggle="tab">Soins Visage</a></li>
-                                        <li role="presentation"  className="active"><a href="#hair" aria-controls="hair" data-toggle="tab">Soin Corps</a></li>
-                                        <li role="presentation"><a href="#nail" aria-controls="nail" data-toggle="tab">Modelage Corps</a></li>
-                                        <li role="presentation"><a href="#beauty" aria-controls="beauty" data-toggle="tab"> Beauté mains&pieds</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="gallery-tab-content">
-                        <div className="tab-content">
-                            <div role="tabpanel" className="tab-pane" id="all">
-                                <div className="single-gallery-list owl_pagination">
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/1.jpg" alt="" />
-                                            <a href="images/gallery/1.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/2.jpg" alt="" />
-                                            <a href="images/gallery/2.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/3.jpg" alt="" />
-                                            <a href="images/gallery/3.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/4.jpg" alt="" />
-                                             <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/5.jpg" alt="" />
-                                            <a href="images/gallery/5.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/3.jpg" alt="" />
-                                            <a href="images/gallery/3.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/4.jpg" alt="" />
-                                            <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/5.jpg" alt="" />
-                                            <a href="images/gallery/5.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/4.jpg" alt="" />
-                                            <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/3.jpg" alt="" />
-                                            <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/4.jpg" alt="" />
-                                             <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/5.jpg" alt="" />
-                                            <a href="images/gallery/5.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div role="tabpanel" className="tab-pane" id="massage">
-                                <div className="single-gallery-list owl_pagination">
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/1.jpg" alt="" />
-                                            <a href="images/gallery/1.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/2.jpg" alt="" />
-                                            <a href="images/gallery/2.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/3.jpg" alt="" />
-                                            <span>  <a href=""><i className="zmdi zmdi-zoom-in"></i></a></span>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/4.jpg" alt="" />
-                                             <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/5.jpg" alt="" />
-                                            <a href="images/gallery/5.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/3.jpg" alt="" />
-                                            <a href="images/gallery/3.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/4.jpg" alt="" />
-                                             <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/5.jpg" alt="" />
-                                            <a href="images/gallery/5.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div role="tabpanel" className="tab-pane" id="skin">
-                            <div className="single-gallery-list owl_pagination">
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/1.jpg" alt="" />
-                                            <a href="images/gallery/1.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/2.jpg" alt="" />
-                                            <a href="images/gallery/2.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/3.jpg" alt="" />
-                                            <a href="images/gallery/3.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/4.jpg" alt="" />
-                                             <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/5.jpg" alt="" />
-                                            <a href="images/gallery/5.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/3.jpg" alt="" />
-                                            <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/4.jpg" alt="" />
-                                             <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/5.jpg" alt="" />
-                                            <a href="images/gallery/5.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div role="tabpanel" className="tab-pane active" id="hair">
-                                <div className="single-gallery-list owl_pagination">
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/1.jpg" alt="" />
-                                            <a href="images/gallery/1.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/2.jpg" alt="" />
-                                            <span><a href="images/gallery/2.jpg"><i className="zmdi zmdi-zoom-in"></i></a></span>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/3.jpg" alt="" />
-                                            <a href="images/gallery/3.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/4.jpg" alt="" />
-                                             <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/5.jpg" alt="" />
-                                            <a href="images/gallery/5.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/3.jpg" alt="" />
-                                            <a href="images/gallery/3.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/4.jpg" alt="" />
-                                             <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/5.jpg" alt="" />
-                                            <a href="images/gallery/5.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div role="tabpanel" className="tab-pane" id="nail">
-                                <div className="single-gallery-list owl_pagination">
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/1.jpg" alt="" />
-                                            <a href="images/gallery/1.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/2.jpg" alt="" />
-                                            <a href="images/gallery/2.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/3.jpg" alt="" />
-                                            <a href="images/gallery/3.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/4.jpg" alt="" />
-                                             <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/5.jpg" alt="" />
-                                            <a href="images/gallery/5.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/3.jpg" alt="" />
-                                            <a href="images/gallery/3.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/4.jpg" alt="" />
-                                             <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/5.jpg" alt="" />
-                                            <a href="images/gallery/5.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div role="tabpanel" className="tab-pane" id="beauty">
-                                <div className="single-gallery-list owl_pagination">
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/1.jpg" alt="" />
-                                            <a href="images/gallery/1.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/2.jpg" alt="" />
-                                            <a href="images/gallery/2.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/3.jpg" alt="" />
-                                            <a href="images/gallery/3.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/4.jpg" alt="" />
-                                             <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/5.jpg" alt="" />
-                                            <a href="images/gallery/5.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/3.jpg" alt="" />
-                                            <a href="images/gallery/3.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/4.jpg" alt="" />
-                                             <a href="images/gallery/4.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="single-gallery">
-                                        <div className="gallery-img">
-                                            <img src="images/gallery/5.jpg" alt="" />
-                                            <a href="images/gallery/5.jpg"><i className="zmdi zmdi-zoom-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            <Gallery />
+
             {/* <!--Gallery section end-->  */}
             {/* <!--Offer section start-->  */}
-            <div className="special-offer">
+            {/* <div className="special-offer">
                <div className="bg-img">
                     <div className="container">
                         <div className="row">
@@ -539,62 +174,18 @@ export default function Home ()  {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* <!--Offer section end-->  */}
+
             {/* <!--Our feature section-->  */}
-            <div className="our-feature ptb-100">
-                <div className="container">
-                   <div className="row">
-                        <div className="col-md-8 col-md-offset-2">
-                            <div className="section-title text-center">
-                                <h2>our Features</h2>
-                                <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-4 col-sm-6 col-xs-12">
-                            <div className="single-feature text-center">
-                                <div className="feature-img">
-                                    <img src="images/feature/1.png" alt="" />
-                                </div>
-                                <div className="feature-desc">
-                                    <h3><a href="#">Face Treatment</a></h3>
-                                    <p>$100</p>
-                                    <a href="#">Book now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 col-sm-6 col-xs-12">
-                            <div className="single-feature text-center">
-                                <div className="feature-img">
-                                    <img src="images/feature/2.png" alt="" />
-                                </div>
-                                <div className="feature-desc">
-                                    <h3><a href="#">Body message</a></h3>
-                                    <p>$300</p>
-                                    <a href="#">Book now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 hidden-sm col-xs-12">
-                            <div className="single-feature text-center">
-                                <div className="feature-img">
-                                    <img src="images/feature/3.png" alt="" />
-                                </div>
-                                <div className="feature-desc">
-                                    <h3><a href="#">Nail Treatment</a></h3>
-                                    <p>$200</p>
-                                    <a href="#">Book now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            <Feature />
+
+            
             {/* <!--Our feature section end-->  */}
+
             {/* <!--Video section start-->  */}
-            <div className="video-section text-center">
+            {/* <div className="video-section text-center">
                 <div className="bg-overlay"></div>
                 <div className="container">
                     <div className="row">
@@ -608,7 +199,7 @@ export default function Home ()  {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* <!--Video section end-->  */}
 
             {/* <!--pricing palaning start-->  */}
@@ -625,32 +216,80 @@ export default function Home ()  {
 
 
                     <div className="row">
+
                         <div className="col-md-4 col-sm-6 col-xs-12">
                             <div className="pricing-table text-center">
                                 <div className="pricing-title">
-                                    <h3>silver pack</h3>
+                                    <h3>Epilations</h3>
                                 </div>
                                 <div className="pricing-desc">
-                                    <h2><span className="currency">$</span>77<span className="date">/month</span></h2>
+                                    <p><span className="partir">à partir de </span></p>
+                                    <h2>10<span className="currency">€</span></h2>
+                                    {/* */}
                                     <ul>
-                                        <li>Nail cutting & styling</li>
-                                        <li>Hot Ayurvedic spa</li>
-                                        <li>Hot oil massage</li>
-                                        <li>Body wraps</li>
+                                        <li>Epilation</li>
+                                        <li>d'une partie</li>
+                                        <li>du</li>
+                                        <li>corps</li>
                                     </ul>
                                     <div className="book-now">
-                                        <a href="#">Book now</a>
+                                        <a href="#">Réservez</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div className="col-md-4 col-sm-6 col-xs-12">
+                            <div className="pricing-table text-center">
+                                <div className="pricing-title">
+                                    <h3>Soins du visage</h3>
+                                </div>
+                                <div className="pricing-desc">
+                                    <p><span className="partir">à partir de </span></p>
+                                    <h2>46<span className="currency">€</span></h2>
+                                    {/* */}
+                                    <ul>
+                                        <li>Soins du</li>
+                                        <li>visage</li>
+                                        <li>complet</li>
+                                        <li>50 minutes</li>
+                                    </ul>
+                                    <div className="book-now">
+                                        <a href="#">Réservez</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-md-4 col-sm-6 col-xs-12">
+                            <div className="pricing-table text-center">
+                                <div className="pricing-title">
+                                    <h3>Soins du corps</h3>
+                                </div>
+                                <div className="pricing-desc">
+                                    <p><span className="partir">à partir de </span></p>
+                                    <h2>42<span className="currency">€</span></h2>
+                                    {/* */}
+                                    <ul>
+                                        <li>Soins du</li>
+                                        <li>corps</li>
+                                        <li>...</li>
+                                        <li>...</li>
+                                    </ul>
+                                    <div className="book-now">
+                                        <a href="#">Réservez</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* <div className="col-md-4 col-sm-6 col-xs-12">
                             <div className="pricing-table text-center">
                                 <div className="pricing-title">
                                     <h3>silver pack</h3>
                                 </div>
                                 <div className="pricing-desc">
-                                    <h2><span className="currency">$</span>77<span className="date">/month</span></h2>
+                                    <h2><span className="date">à partir de </span>46<span className="currency">€</span></h2>
                                     <ul>
                                         <li>Nail cutting & styling</li>
                                         <li>Hot Ayurvedic spa</li>
@@ -669,7 +308,7 @@ export default function Home ()  {
                                     <h3>silver pack</h3>
                                 </div>
                                 <div className="pricing-desc">
-                                     <h2><span className="currency">$</span>77<span className="date">/month</span></h2>
+                                     <h2><span className="currency">à partir de</span>77<span className="date">€</span></h2>
                                     <ul>
                                         <li>Nail cutting & styling</li>
                                         <li>Hot Ayurvedic spa</li>
@@ -681,7 +320,9 @@ export default function Home ()  {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
+
+
                     </div>
                 </div>
             </div>
@@ -695,31 +336,32 @@ export default function Home ()  {
                                 <div className="testimonail-list owl_pagination">
 
 
+                                   {/* <div className="single-testimonial">
+                                        <p><i className="fa fa-quote-left" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
+                                        <h3>sathi bhuiyan</h3>
+                                        <p className="title">Manager</p>
+                                    </div>
+                                     <div className="single-testimonial">
+                                        <p><i className="fa fa-quote-left" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
+                                        <h3>sathi bhuiyan</h3>
+                                        <p className="title">Manager</p>
+                                    </div>*/}
                                     <div className="single-testimonial">
                                         <p><i className="fa fa-quote-left" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
                                         <h3>sathi bhuiyan</h3>
                                         <p className="title">Manager</p>
                                     </div>
-                                    {/* <div className="single-testimonial">
-                                        <p><i className="fa fa-quote-left" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
-                                        <h3>sathi bhuiyan</h3>
-                                        <p className="title">Manager</p>
-                                    </div>
                                     <div className="single-testimonial">
                                         <p><i className="fa fa-quote-left" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
                                         <h3>sathi bhuiyan</h3>
                                         <p className="title">Manager</p>
                                     </div>
+
                                     <div className="single-testimonial">
                                         <p><i className="fa fa-quote-left" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
                                         <h3>sathi bhuiyan</h3>
                                         <p className="title">Manager</p>
-                                    </div>
-                                    <div className="single-testimonial">
-                                        <p><i className="fa fa-quote-left" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
-                                        <h3>sathi bhuiyan</h3>
-                                        <p className="title">Manager</p>
-                                    </div> */}
+                                    </div> 
 
 
                                 </div>
@@ -801,8 +443,10 @@ export default function Home ()  {
                 </div>
             </div>
             {/* <!--our blog end-->  */}
+
             {/* <!--Our partener start-->  */}
-            <div className="our-partner">
+            
+            {/* <div className="our-partner">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
@@ -842,6 +486,7 @@ export default function Home ()  {
                     </div>
                 </div>
             </div>
+             */}
             {/* <!--Our partener end-->  */}
 
             

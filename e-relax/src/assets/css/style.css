@@ -805,18 +805,38 @@ img{max-width: 100%}
 }
 .pricing-desc > h2 span.currency {
   font-size: 22px;
-  left: -19px;
+  right: -30px;
   position: absolute;
   top: -10px;
   font-weight: bold;
 }
+.pricing-desc > p span.partir {
+  top: 120px;
+  left:35px;
+  font-size: 18px;
+  position: absolute;
+  font-family: "Raleway",sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
 .pricing-desc > h2 span.date {
+  top: 120px;
+  left:35px;
+  font-size: 18px;
+  position: absolute;
+  font-family: "Raleway",sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* .pricing-desc > h2 span.date {
   bottom: -7px;
   font-size: 22px;
   position: absolute;
   font-family: "Raleway",sans-serif;
   font-weight: bold;
-}
+} */
+
 .pricing-desc > ul {
     margin-top: 28px;
 }
