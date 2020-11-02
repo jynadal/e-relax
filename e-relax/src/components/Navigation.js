@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import {Link} from 'react-router-dom';
+import logo from '../assets/images/logo/logo-escalerelax.png';
 
 import {Avatar} from 'antd';
 // import './_navigation.scss';
@@ -49,28 +50,31 @@ const Navigation = ({user}) => {
                         <div className="col-md-6 col-sm-6 hidden-xs">
                             <div className="header-left">
                                 <div className="call-center">
-                                    <p><i className="zmdi zmdi-phone"></i>(+880) 01656300176</p>
+                                    <p><i className="zmdi zmdi-phone"></i>06 15 17 23 41</p>
                                 </div>
                                 <div className="mail-address">
-                                    <p><i className="zmdi zmdi-email"></i>breed@gmail.com</p>
+                                    <p><i className="zmdi zmdi-email"></i>contact@escalerelax.com</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-6 col-sm-6 col-xs-12">
                             <div className="social-icons">
-                            <a href="https://www.facebook.com"
-                                className="facebook social">
-                                <FontAwesomeIcon icon={faFacebook} size="1x" />
-                                </a>
-                                <a href="#"><i className="zmdi zmdi-facebook"></i></a>
-                                <a href="#"><i className="zmdi zmdi-twitter"></i></a>
-                                <a href="#"><i className="zmdi zmdi-dribbble"></i></a>
-                                <a href="#"><i className="zmdi zmdi-pinterest"></i></a>
-                                <a href="#"><i className="zmdi zmdi-instagram"></i></a>
-                                <a href="https://www.instagram.com/"
+                            
+                                <a href="https://www.facebook.com"><i className="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i className="fab fa-dribbble"></i></a>
+                                <a href="#"><i className="fab fa-pinterest"></i></a>
+                                <a href="https://www.instagram.com/"><i className="fab fa-instagram"></i></a>
+                                
+                                {/* <a href="https://www.instagram.com/"
                                 className="instagra social">
                                 <FontAwesomeIcon icon={faInstagram} size="1x" />
                                 </a>
+                                <a href="https://www.facebook.com"
+                                className="facebook social">
+                                <FontAwesomeIcon icon={faFacebook} size="1x" />
+                                </a> */}
+
                             </div>
                         </div>
                     </div>
@@ -82,7 +86,8 @@ const Navigation = ({user}) => {
                         <div className="row">
                             <div className="col-md-2 col-sm-6 col-xs-9">
                                 <div className="logo">
-                                    <a href="index.html"><img src="images/logo/logo.png" alt=""/></a>
+                                    <a href="Home">
+                                        <img src={logo} alt="logo"/></a>
                                 </div>
                             </div>
                             <div className="col-md-8 hidden-sm hidden-xs">
@@ -99,6 +104,7 @@ const Navigation = ({user}) => {
                             </div>
                             <div className="col-md-2 col-sm-6 col-xs-3">
                                 <div className="header-action-box">
+                                    
 
                                      {/* <div className="mini-cart" >
                                         <div className="cart-icon">
@@ -141,9 +147,10 @@ const Navigation = ({user}) => {
                                         <!--mini cart end-->
                                     </div>*/}
 
-                                    <div className="search">
-                                        <a href="#"><i className="zmdi zmdi-search"></i></a>
-                                    </div>
+                                    {/* <div className="search">
+                                        <a href="#"><i className="fas fa-search"></i></a>
+                                    </div> */}
+
                                 </div>
                                 <div className="search-box">
                                     <div className="search-form">

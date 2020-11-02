@@ -1044,9 +1044,16 @@ img{max-width: 100%}
 .footer-top {
     background: #f1f1f1 url(../../assets/images/common/f-bg1.png)no-repeat scroll left center;
 }
+
 .footer {
    position: relative;
 }
+
+.footer .container {
+  margin-left: 250px;
+}
+
+
 .footer:before {
     background: url(../../assets/images/common/footer-bg2.png)no-repeat scroll right bottom;
     width: 100%;

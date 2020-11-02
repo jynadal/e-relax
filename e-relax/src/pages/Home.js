@@ -1,79 +1,16 @@
-import React from 'react';
-import Slider from './Slider';
-import Feature from './Feature';
-import Gallery from './Gallery';
+import React from 'react'
+import Slider from './Slider'
+import Feature from './Feature'
 
 import  imgAbout from '../assets/images/about/about1.jpg'
 
 export default function Home ()  {
     return (
         <div>
-            <Slider  />
+            
                         {/* <!--slider section start-->  */}
             <div className="slider-container">
-                {/* <!-- Slider Image -->  */}
-                <div id="mainSlider" className="nivoSlider slider-image">
-                    <img src="../images/slider/1.jpg" alt="" title="#htmlcaption1"/>
-                    <img src="images/slider/2.jpg" alt="" title="#htmlcaption2"/>
-                    <img src="images/slider/3.jpg" alt="" title="#htmlcaption3"/>
-                </div>
-                {/* <!-- Slider Caption 1 -->  */}
-                
-
-                {/* <div id="htmlcaption2" className="nivo-html-caption slider-caption-1">
-                    <div className="slider-text-table">
-                        <div className="slider-text-tablecell">
-                            <div className="container-fluid">
-                                <div className="row">
-                                    <div className="col-md-12 col-sm-12 col-xs-12">
-                                        <div className="slide1-text">
-                                            <div className="middle-text">
-                                                <div className="title-1 wow rotateInDownRight" data-wow-duration="0.9s" data-wow-delay="0s">
-                                                    <h1>welcome our beauty house</h1>
-                                                </div>	
-                                                <div className="desc wow slideInRight" data-wow-duration="1.2s" data-wow-delay="0.2s">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum<br/> massa.lorem ipsum dolor sit amet,consectetur adipicing elit.</p>
-                                                </div>
-                                                <div className="explore-now wow bounceInUp" data-wow-duration="1.3s" data-wow-delay=".5s">
-                                                    <a href="#">Explore now</a>
-                                                </div>	
-                                            </div>	
-                                        </div>				
-                                    </div>
-                                </div>	
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="htmlcaption3" className="nivo-html-caption slider-caption-1">
-                    <div className="slider-text-table">
-                        <div className="slider-text-tablecell">
-                            <div className="container-fluid">
-                                <div className="row">
-                                    <div className="col-md-12 col-sm-12 col-xs-12">
-                                        <div className="slide1-text">
-                                            <div className="middle-text">
-                                                <div className="title-1 wow rotateInDownRight" data-wow-duration="0.9s" data-wow-delay="0s">
-                                                    <h1>welcome our beauty house</h1>
-                                                </div>	
-                                                <div className="desc wow slideInRight" data-wow-duration="1.2s" data-wow-delay="0.2s">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum<br/> massa.lorem ipsum dolor sit amet,consectetur adipicing elit.</p>
-                                                </div>
-                                                <div className="explore-now wow bounceInUp" data-wow-duration="1.3s" data-wow-delay=".5s">
-                                                    <a href="#">Explore now</a>
-                                                </div>	
-                                            </div>	
-                                        </div>				
-                                    </div>
-                                </div>	
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-               */}
-
+            <Slider  />       
 
             </div>
             {/* <!--slider section end-->  */}
@@ -152,7 +89,7 @@ export default function Home ()  {
 
             {/* <!--Gallery section start-->  */}
 
-            <Gallery />
+            {/* <Gallery /> */}
 
             {/* <!--Gallery section end-->  */}
             {/* <!--Offer section start-->  */}
@@ -208,7 +145,7 @@ export default function Home ()  {
                     <div className="row">
                         <div className="col-md-8 col-md-offset-2">
                             <div className="section-title text-center">
-                                <h2>our pricing plan</h2>
+                                <h2>Nos tarifs </h2>
                                 <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
                             </div>
                         </div>
@@ -346,7 +283,7 @@ export default function Home ()  {
                                         <h3>sathi bhuiyan</h3>
                                         <p className="title">Manager</p>
                                     </div>*/}
-                                    <div className="single-testimonial">
+                                    {/* <div className="single-testimonial">
                                         <p><i className="fa fa-quote-left" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
                                         <h3>sathi bhuiyan</h3>
                                         <p className="title">Manager</p>
@@ -355,12 +292,12 @@ export default function Home ()  {
                                         <p><i className="fa fa-quote-left" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
                                         <h3>sathi bhuiyan</h3>
                                         <p className="title">Manager</p>
-                                    </div>
+                                    </div> */}
 
                                     <div className="single-testimonial">
                                         <p><i className="fa fa-quote-left" aria-hidden="true"></i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
-                                        <h3>sathi bhuiyan</h3>
-                                        <p className="title">Manager</p>
+                                        <h3>Sophie B.</h3>
+                                        {/* <p className="title">Manager</p> */}
                                     </div> 
 
 
@@ -377,7 +314,7 @@ export default function Home ()  {
                     <div className="row">
                         <div className="col-md-8 col-md-offset-2">
                             <div className="section-title text-center">
-                                <h2>our Blog</h2>
+                                <h2>Notre Blog</h2>
                                 <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
                             </div>
                         </div>
@@ -388,24 +325,24 @@ export default function Home ()  {
                                 <div className="single-blog-top fix">
                                     <div className="blog-img">
                                         <a href="#">
-                                            <img src="images/blog/1.jpg" alt="" />
+                                            <img src="https://images.unsplash.com/photo-1522108098940-de49801b5b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
                                         </a>
                                     </div>
                                     <div className="blog-desc">
                                         <h6><a href="#">Lorem Ipsum is simply dummy</a></h6>
                                         <p>Lorem ipsum dolor sit amet, consectetur eiusmodm adipisicing elit, sed do eiusmod tempor incididuntm ut labore et dolore magna aliqua. </p>
-                                        <a className="read-more" href="#">Read more <i className="zmdi zmdi-long-arrow-right"></i></a>
+                                        <a className="read-more" href="#">savoir plus<i className="zmdi zmdi-long-arrow-right"></i></a>
                                     </div>
                                 </div>
                                 <div className="blog-bottom-action">
                                     <div className="blog-publish">
-                                        <p><i className="zmdi zmdi-time"></i>Jun 25, 2017 </p>
+                                        <p><i className="zmdi zmdi-time"></i>25 Juin 2020 </p>
                                     </div>
                                     <div className="blog-action-box">
                                         <ul>
-                                            <li><a href="#"><i className="zmdi zmdi-favorite-outline"></i>(550)</a></li>
-                                            <li><a href="#"><i className="zmdi zmdi-comments"></i>(200)</a></li>
-                                            <li><a href="#"><i className="zmdi zmdi-share"></i>(100)</a></li>
+                                            <li><a href="#"><i className="fas fa-heart"></i>(550)</a></li>
+                                            <li><a href="#"><i className="fas fa-comments"></i>(200)</a></li>
+                                            <li><a href="#"><i className="fas fa-share-alt"></i>(100)</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -416,24 +353,24 @@ export default function Home ()  {
                                 <div className="single-blog-top fix">
                                     <div className="blog-img">
                                         <a href="#">
-                                            <img src="images/blog/2.jpg" alt="" />
+                                            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" />
                                         </a>
                                     </div>
                                     <div className="blog-desc">
                                         <h6><a href="#">Lorem Ipsum is simply dummy</a></h6>
                                         <p>Lorem ipsum dolor sit amet, consectetur eiusmodm adipisicing elit, sed do eiusmod tempor incididuntm ut labore et dolore magna aliqua. </p>
-                                        <a className="read-more" href="#">Read more <i className="zmdi zmdi-long-arrow-right"></i></a>
+                                        <a className="read-more" href="#">Savoir plus<i className="zmdi zmdi-long-arrow-right"></i></a>
                                     </div>
                                 </div>
                                 <div className="blog-bottom-action">
                                     <div className="blog-publish">
-                                        <p><i className="zmdi zmdi-time"></i>Jun 25, 2017 </p>
+                                        <p><i className="zmdi zmdi-time"></i>25 Juin 2020  </p>
                                     </div>
                                     <div className="blog-action-box">
                                         <ul>
-                                            <li><a href="#"><i className="zmdi zmdi-favorite-outline"></i>(550)</a></li>
-                                            <li><a href="#"><i className="zmdi zmdi-comments"></i>(200)</a></li>
-                                            <li><a href="#"><i className="zmdi zmdi-share"></i>(100)</a></li>
+                                            <li><a href="#"><i className="fas fa-heart"></i>(550)</a></li>
+                                            <li><a href="#"><i className="fas fa-comments"></i>(200)</a></li>
+                                            <li><a href="#"><i className="fas fa-share-alt"></i>(100)</a></li>
                                         </ul>
                                     </div>
                                 </div>
